@@ -1,0 +1,33 @@
+{
+  "name": "@wbc-ui/latex2",
+  "version": "1.0.0-r14",
+  "description": "LaTeX/KaTeX math rendering component for @wbc-ui/core2",
+  "main": "dist/latex2.umd.js",
+  "module": "dist/latex2.es.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "logo/"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "dependencies": {
+    "vatex": "^0.1.0",
+    "katex": "^0.13.24"
+  },
+  "peerDependencies": {
+    "vue": "^2.7.16",
+    "@wbc-ui/core2": "1.0.0-r14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbc-ui/latex2.git"
+  },
+  "homepage": "https://github.com/wbc-ui/latex2#readme",
+  "bugs": {
+    "url": "https://github.com/wbc-ui/latex2/issues"
+  }
+}
