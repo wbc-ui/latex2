@@ -15,10 +15,22 @@
 </p>
 
 <p align="center">
-  <a href="https://latex2.wbc-ui.com">📘 Docs</a> ·
+  <a href="https://latex2.wbc-ui.com">📘 Docs & Playground</a> ·
   <a href="https://github.com/wbc-ui/latex2">🐙 GitHub</a> ·
   <a href="https://latex2.wbc-ui.com">▶️ Playground</a> ·
   <a href="https://wbc-ui.com">💎 Pro</a>
+</p>
+
+<p align="center">
+  <img src="./assets/hero-math-rendering.webp"
+       alt="@wbc-ui/latex2 — KaTeX-powered math rendering for Vue"
+       width="780"/>
+</p>
+
+<p align="center">
+  <img src="./assets/mermaid-architecture.png"
+       alt="Architecture diagram"
+       width="680"/>
 </p>
 
 ---
@@ -65,7 +77,7 @@ A **Vue 2.7+ component** — `<WBLatex>` — that renders a LaTeX string to type
 
 ---
 
-## Teasing Examples
+## Usage Examples
 
 ### Level 1 — Inline formula
 ```html
@@ -142,6 +154,23 @@ Vue.use(WBLatexPlugin);
 | A command throws / shows red | KaTeX doesn't support it, or a typo | Define it via `:macros`, or check [KaTeX support](https://katex.org/docs/supported.html); set `:throwOnError="false"` to render inline. |
 
 For worked examples, see [latex2.wbc-ui.com](https://latex2.wbc-ui.com).
+
+---
+
+## ⚡ The Component Under the Hood
+
+<details>
+<summary>Mermaid diagram (interactive fallback)</summary>
+<p align="center">
+  <img src="./assets/mermaid-under-the-hood.png"
+       alt="Component architecture"
+       width="680"/>
+</p>
+</details>
+
+- **Synchronous rendering**: Wraps KaTeX to instantly transform text to typeset math.
+- **Safe fallback**: Handles syntax errors gracefully by rendering the raw string in `errorColor` rather than crashing the app.
+- **Zero-config**: No global MathJax setup required, macros can be passed directly via props.
 
 ---
 

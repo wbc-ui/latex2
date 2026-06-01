@@ -1,6 +1,6 @@
 {
   "name": "@wbc-ui/latex2",
-  "version": "1.0.0-r15",
+  "version": "1.0.0-r16",
   "description": "LaTeX/KaTeX math rendering component for @wbc-ui/core2",
   "main": "dist/latex2.umd.js",
   "module": "dist/latex2.es.js",
@@ -20,7 +20,7 @@
   },
   "peerDependencies": {
     "vue": "^2.7.16",
-    "@wbc-ui/core2": "1.0.0-r15"
+    "@wbc-ui/core2": "1.0.0-r16"
   },
   "repository": {
     "type": "git",
